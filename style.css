@@ -4,8 +4,9 @@ body {
 }
 
 :root {
-  --widthValue:90%;
-  --marginAuto : 3% auto;
+  --widthValue:96%;
+  --marginAuto : 2% auto;
+  --paddingFixed : 2%;
 }
 
 
@@ -135,7 +136,6 @@ body {
 }
 
 .setting-profile {
- 
   background-color: #FFFFFF;
   border-bottom: 0.3px solid #C4C4C4;
   /* border: 1.5px solid #C4C4C4; */
@@ -145,8 +145,8 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 2% 0;
-
+  padding: 1% 0;
+  gap: 1%;
 }
 
 .setting-profile-details p{
@@ -161,40 +161,57 @@ body {
   /* margin: 4%; */
   width: var(--widthValue);
   margin: var(--marginAuto);
-  padding: 4%;
+  padding: var(--paddingFixed);
   border-radius: 10px;
 }
 
-.credit-institution-information-top {
+.credit-institution-information-buttom{
   display: flex;
+  gap: 5%;
+
 }
 
-.credit-institution-information-buttom {
-  display: flex;
+.credit-institution-org-logo{
+  text-align: center;
 }
 
-/* basic information div */
+.credit-institution-org-favicon{
+  text-align: center;
+}
+
+/* basic information div -----------------------*/
 
 .basic-information {
   background-color: #FFFFFF;
   width: var(--widthValue);
   margin: var(--marginAuto);
-  padding: 4%;
+  padding: var(--paddingFixed);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .basic-information-address-more {
   display: flex;
-  gap: 10%;
+  gap: 6%;
 }
 
-/* authorized-super-admin-user section  */
+.basic-information-address-line div{
+  margin: 1.5rem 0;
+  
+}
+.basic-information-address-line div p{
+  line-height: 0.5rem;
+}
+
+/* authorized-super-admin-user section --------------------- */
 
 .authorized-super-admin-user {
   width: var(--widthValue);
   margin: var(--marginAuto);
   background-color: #FFFFFF;
-  padding: 4%;
+  padding: var(--paddingFixed);
   border-radius: 10px;
 }
 
@@ -217,7 +234,7 @@ body {
   width: var(--widthValue);
   margin: var(--marginAuto);
   background-color: #FFFFFF;
-  padding: 4%;
+  padding: var(--paddingFixed);
   border-radius: 10px;
 }
 
@@ -232,7 +249,7 @@ body {
   background-color: #FFFFFF;
   width: var(--widthValue);
   margin: var(--marginAuto);
-  padding: 4%;
+  padding: var(--paddingFixed);
   border-radius: 10px;
 }
 
@@ -248,7 +265,7 @@ body {
   background-color: #FFFFFF;
   width: var(--widthValue);
   margin: var(--marginAuto);
-  padding: 4%;
+  padding: var(--paddingFixed);
   border-radius: 10px;
 }
 
@@ -264,7 +281,7 @@ body {
   background-color: #FFFFFF;
   width: var(--widthValue);
   margin: var(--marginAuto);
-  padding: 4%;
+  padding: var(--paddingFixed);
   border-radius: 10px;
 }
 
@@ -280,6 +297,8 @@ body {
   justify-content: space-between;
   margin: 4%;
   border-radius: 10px;
+  width: var(--widthValue);
+  margin: var(--marginAuto);
 }
 
 .footer-btn a {
