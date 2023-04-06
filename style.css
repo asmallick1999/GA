@@ -11,12 +11,15 @@ body {
 
 
 /* ------------------------------------------------------------------ */
+p{
+  margin: 1rem 0;
+
+}
 .px14 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 0.875rem;
-  
   color: #333333;
 }
 
@@ -219,6 +222,18 @@ body {
   display: flex;
   gap: 10%;
 }
+.authorized-super-admin-user-full-name{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.authorized-super-div {
+  display: flex;
+  gap: 2%;
+  justify-content: space-between;
+}
+
 
 .authorized-super-admin-email div {
   display: flex;
@@ -226,6 +241,9 @@ body {
 
 .authorized-super-admin-user-mobile div {
   display: flex;
+}
+.authorized-super-admin-gap{
+  margin-bottom: 0;
 }
 
 /* bureau-membership-certificate section  */
